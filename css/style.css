@@ -1,0 +1,13 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+
+}
+
+ul {
+    display: inline;
+}
+
+li {
+    float: right;
+}
