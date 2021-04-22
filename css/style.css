@@ -1,17 +1,17 @@
 body {
-    font-family: Raleway, sans-serif;
-    color: #000;
+  font-family: Raleway, sans-serif;
+  color: #000;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #0065FC;
+  color: #0065fc;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -21,7 +21,7 @@ body {
 /* Change the color of links on hover */
 .topnav a:hover {
   text-decoration: overline;
-  color: #0065FC;
+  color: #0065fc;
 }
 
 /* Right-aligned section inside the top navigation */
@@ -30,43 +30,43 @@ body {
 }
 
 form {
-    display: inline;
+  display: inline;
 }
-  
-  /* Style the search field */
-  form.search input[type=text] {
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid grey;
-    background: #f1f1f1;
-  }
 
-  #icon {
-    background-color: rgb(215, 221, 216);
-    font-size: 20px;
-    padding: 8px;
-    border-radius: 10px 0 0 10px;
-  }
-  
-  /* Style the submit button */
-  form.search button {
-    padding: 10px;
-    background: #0065FC;
-    color: white;
-    font-size: 14px;
-    border: 1px solid grey;
-    border-left: none; /* Prevent double borders */
-    border-radius: 0 10px 10px 0;
-    cursor: pointer;
-  }
-  
-  form.example button:hover {
-    background: #0b7dda;
-  }
-  
-  /* Clear floats */
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+/* Style the search field */
+form.search input[type="text"] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid grey;
+  background: #f1f1f1;
+}
+
+#icon {
+  background-color: rgb(215, 221, 216);
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 10px 0 0 10px;
+}
+
+/* Style the submit button */
+form.search button {
+  padding: 10px;
+  background: #0065fc;
+  color: white;
+  font-size: 14px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
