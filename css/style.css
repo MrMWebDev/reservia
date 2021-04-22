@@ -111,12 +111,14 @@ nav {
 
 .container {
   display: grid;
+  width: 75%;
   grid-template-columns: auto auto auto;
   grid-template-rows: 125px 125px;
   grid-gap: 20px;
   background-color: #dddddd;
   padding: 20px;
   border-radius: 20px;
+  float: left;
 }
 
 .container > div {
@@ -128,5 +130,28 @@ nav {
 }
 
 .container > div:hover{
+    background-color: #deebff;
+}
+
+.sidecontainer {
+  display: grid;
+  grid-gap: 20px;
+  width: 15%;
+  margin-right: 15px;
+  float: right;
+  background-color: #dddddd;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.sidecontainer > div {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 20px;
+}
+
+.sidecontainer > div:hover{
     background-color: #deebff;
 }
