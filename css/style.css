@@ -1,13 +1,181 @@
 body {
-    font-family: 'Raleway', sans-serif;
-    color: #000;
-
+  font-family: Raleway, sans-serif;
+  color: #000;
 }
 
-ul {
-    display: inline;
+.topnav {
+  overflow: hidden;
 }
 
-li {
-    float: right;
+.topnav a {
+  float: left;
+  color: #0065fc;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.topnav a:hover {
+  text-decoration: overline;
+  font-weight: bold;
+  height: 80%;
+}
+
+.topnav a:visited {
+  color: #000;
+}
+
+.topnav-right {
+  float: right;
+}
+
+form {
+  display: flex;
+}
+
+form.search input[type="text"] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+#icon {
+  background-color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 10px 0 0 10px;
+}
+
+form.search button {
+  padding: 10px;
+  background: #0065fc;
+  color: white;
+  font-size: 14px;
+  border: 1px solid #f2f2f2;
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+form.search button:hover {
+  background: #deebff;
+}
+
+nav {
+  display: flex;
+}
+
+.filter {
+  display: flex;
+  flex: auto;
+  max-width: 900px;
+  gap: 2%;
+}
+.filteritem {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+}
+
+.filteritem:hover {
+  color: #000;
+  background-color: #deebff;
+}
+.filter p {
+  font-weight: bold;
+  margin: 10px;
+}
+
+.filter i {
+  font-size: 20px;
+  color: #0065fc;
+}
+
+.filter div {
+  border: solid;
+  height: 40px;
+  border-width: 3px;
+  border-radius: 30px;
+  border-color: #f2f2f2;
+}
+
+.filter .fas {
+  background-color: #deebff;
+  border-radius: 20px;
+  height: 100%;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row: 125px 125px;
+  width: 75%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 20px;
+  float: left;
+}
+
+.container h3 {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+
+.container div a {
+  background-color: #fff;
+  text-align: center;
+  width: 100px;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+.item img {
+  width: 200px;
+  height: 150px;
+  border-radius: 20px;
+}
+
+.item2 img {
+  width: 20%;
+  border-radius: 20px;
+}
+
+
+.container div:hover{
+    background-color: #deebff;
+}
+
+.sidecontainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  grid-gap: 20px;
+  width: 15%;
+  margin-right: 10px;
+  float: right;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.sidecontainer div {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+.sidecontainer div:hover{
+    background-color: #deebff;
 }

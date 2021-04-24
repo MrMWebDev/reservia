@@ -1,39 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/1a7cfb1076.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1a7cfb1076.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1a7cfb1076.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Reservia</title>
-</head>
+  </head>
 
-<body>
-   <header>
-       <img src="img/logo/Reservia.svg" alt="logo">
-       <nav>
-           <ul>
-               <li><a href="#">Accommodations</a></li>
-               <li><a href="#">Activities</a></li>
-               <li><a href="#">Sign Up</a></li>
-           </ul>
-       </nav>
-       <br>
-       <h2>
-           Find a place for your dream vacation
-       </h2>
-       <p>Downtown or in nature</p>
-       <br>
+  <body>
+    <header>
+      <div class="topnav">
+        <img src="img/logo/Reservia.svg" alt="logo" />
+        <div class="topnav-right">
+          <a href="#">Accommodations</a>
+          <a href="#">Activities</a>
+          <a href="#">Sign Up</a>
+        </div>
+      </div>
+      <br />
+      <h2>Find a place for your dream vacation</h2>
+      <p>Downtown or in nature</p>
 
-   </header> 
-</body>
+      <form class="search" action="#">
+        <i class="fas fa-map-marker-alt" id="icon" aria-hidden="true"></i>
+        <input type="text" placeholder="Search..." name="search" />
+        <button type="submit"><i class="search">Search</i></button>
+      </form>
+    </header>
+    <br />
+    <nav>
+      <div class="filter">
+        <p>Filters</p>
+        <div class="filteritem">
+          <i class="fas fa-money-bill-alt" aria-hidden="true"></i>
+          <p>Low cost</p>
+        </div>
+        <div class="filteritem">
+          <i class="fas fa-user-friends" aria-hidden="true"></i>
+          <p>Family-friendly</p>
+        </div>
+        <div class="filteritem">
+          <i class="fas fa-heart" aria-hidden="true"></i>
+          <p>Romantic</p>
+        </div>
+        <div class="filteritem">
+          <i class="fas fa-dog" aria-hidden="true"></i>
+          <p>Pets allowed</p>
+        </div>
+      </div>
+    </nav>
+    <br />
+    <section>
+      <div class="container">
+        <h3>Accommodations in Marseille</h3>
+        <div>
+          <a class="item" alt="Auberge la Cannebiere">
+            <img src="img\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg"alt="Auberge la Cannebiere">
+          </a>
+        </div>
+        <div>
+          <a class="item"><img src="img\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port"></a>
+        </div>
+        <div>
+          <a class="item"><img src="img\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Les Mouette Hotel"></a>
+        </div>
+        <div>
+          <a class="item"><img src="img\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la Mer"></a>
+        </div>
+        <div>
+          <a class="item"><img src="img\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier"></a>
+        </div>
+        <div>
+          <a class="item"><img src="img\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel chez Amina"></a>
+        </div>
+      </div>
+    </section>
+    <aside>
+      <div class="sidecontainer">
+        <h3>Most Popular</h3>
+        <div class="item2">1</div>
+        <div class="item2">2</div>
+        <div class="item2">3</div>
+      </div>
+    </aside>
+  </body>
 
-<footer>
-    <div>
-
-    </div>
-</footer>
-
+  <footer>
+    <div></div>
+  </footer>
 </html>
