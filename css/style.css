@@ -1,6 +1,7 @@
 body {
   font-family: Raleway, sans-serif;
   color: #000;
+  margin: left 5%;
 }
 
 .topnav {
@@ -128,14 +129,13 @@ form.search button:hover {
   align-items: center;
   gap: 2%;
   height: 30px;
-  cursor: pointer;
 }
 
 
 .info i {
   font-size: 12px;
   color: #0065fc;
-  
+  cursor: pointer;
 }
 
 
@@ -152,8 +152,8 @@ form.search button:hover {
 
 .container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-row: 125px 125px;
+
+
   grid-gap: 20px;
   width: 65%;
   background-color: #f2f2f2;
@@ -170,7 +170,6 @@ form.search button:hover {
 .container .item {
   background-color: #fff;
   text-align: center;
-  width: 100px;
   font-size: 14px;
   border-radius: 20px;
   border: #ffffff;
@@ -181,12 +180,16 @@ form.search button:hover {
   width: 200px;
   height: 150px;
   border-radius: 20px;
+  border: #fff;
+  border-width: 5px;
+  cursor: pointer;
 }
 
 .item2 img {
   width: 200px;
   height: 150px;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .container div:hover {
@@ -203,17 +206,30 @@ form.search button:hover {
   background-color: #f2f2f2;
   padding: 20px;
   border-radius: 20px;
+  align-items: center;
 }
 
 .sidecontainer .item {
   background-color: #ffffff;
-  text-align: center;
+  align-items: center;
   padding: 20px;
   font-size: 14px;
   border-radius: 20px;
   border: #ffffff;
 }
 
+.item2 i {
+  float: right;
+  align-content: center;
+  height: 100%;
+}
+
 .sidecontainer div:hover {
   background-color: #deebff;
+}
+
+@media screen and (max-width: 720px) {
+    .container {
+      grid: column;
+  }
 }
