@@ -22,7 +22,7 @@ body {
   height: 80%;
 }
 
-.topnav a:visited {
+.topnav a:active {
   color: #000;
 }
 
@@ -63,14 +63,14 @@ form.search button:hover {
   background: #deebff;
 }
 
-nav {
+.nav {
   display: flex;
 }
 
 .filter {
   display: flex;
   flex: auto;
-  max-width: 900px;
+  max-width: 75%;
   gap: 2%;
 }
 .filteritem {
@@ -106,9 +106,45 @@ nav {
 
 .filter .fas {
   background-color: #deebff;
-  border-radius: 20px;
+  border-radius: 50%;
+  height: 41px;
+  width: 41px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5px;
+  align-items: center;
+  max-width: 40%;
   height: 100%;
-  width: 25%;
+}
+
+.infoitem {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  height: 30px;
+  cursor: pointer;
+}
+
+
+.info i {
+  font-size: 12px;
+  color: #0065fc;
+  
+}
+
+
+.info .fas {
+  border: solid;
+  border-color: #f2f2f2;
+  border-radius: 50%;
+  height: 33px;
+  width: 33px;
   justify-content: center;
   align-items: center;
   display: inline-flex;
@@ -118,7 +154,8 @@ nav {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-row: 125px 125px;
-  width: 75%;
+  grid-gap: 20px;
+  width: 65%;
   background-color: #f2f2f2;
   padding: 20px;
   border-radius: 20px;
@@ -130,12 +167,14 @@ nav {
   grid-row: 1;
 }
 
-.container div a {
+.container .item {
   background-color: #fff;
   text-align: center;
   width: 100px;
   font-size: 14px;
   border-radius: 20px;
+  border: #ffffff;
+  border-width: 5px;
 }
 
 .item img {
@@ -145,22 +184,20 @@ nav {
 }
 
 .item2 img {
-  width: 20%;
+  width: 200px;
+  height: 150px;
   border-radius: 20px;
 }
 
-
-.container div:hover{
-    background-color: #deebff;
+.container div:hover {
+  background-color: #deebff;
 }
 
 .sidecontainer {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: space-around;
+  display: grid;
+  grid-column: auto;
   grid-gap: 20px;
-  width: 15%;
+  width: 25%;
   margin-right: 10px;
   float: right;
   background-color: #f2f2f2;
@@ -168,14 +205,15 @@ nav {
   border-radius: 20px;
 }
 
-.sidecontainer div {
+.sidecontainer .item {
   background-color: #ffffff;
   text-align: center;
   padding: 20px;
   font-size: 14px;
   border-radius: 20px;
+  border: #ffffff;
 }
 
-.sidecontainer div:hover{
-    background-color: #deebff;
+.sidecontainer div:hover {
+  background-color: #deebff;
 }
