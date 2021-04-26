@@ -152,8 +152,7 @@ form.search button:hover {
 
 .container {
   display: grid;
-
-
+  height: fit-content;
   grid-gap: 20px;
   width: 65%;
   background-color: #f2f2f2;
@@ -226,6 +225,61 @@ form.search button:hover {
 
 .sidecontainer div:hover {
   background-color: #deebff;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.container2 h3 {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+}
+
+
+.container2 .actitem {
+  background-color: #fff;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 20px;
+  border: #ffffff;
+  border-width: 5px;
+}
+
+.actitem img {
+  width: 200px;
+  height: 150px;
+  border-radius: 20px;
+  border: #fff;
+  border-width: 5px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.footer1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer2 {
+  display: flex;
+  flex-direction: column;
+}
+.footer3 {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 720px) {
