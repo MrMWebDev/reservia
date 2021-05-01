@@ -43,12 +43,6 @@ form.search button {
   font-family: Raleway, sans-serif;
   background: #0065fc;
   color: white;
-<<<<<<< Updated upstream
-=======
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-  background: #0065fc;
->>>>>>> Stashed changes
   border: 1px solid #f2f2f2;
   border-left: none;
   border-radius: 0 10px 10px 0;
@@ -263,7 +257,6 @@ form.search button:hover {
   grid-area: 1 / 1 /  span 1 / span 4;
 }
 
-<<<<<<< Updated upstream
 .container2 .actitem1 {
   grid-area: 2 / 1 / span 2;
   width: 225px;
@@ -274,12 +267,6 @@ form.search button:hover {
 .container2 .actitem3 {
   grid-area: 2 / 3 / span 2;
   width: 225px;
-=======
-.container2 .actitem {
-  background-color: #fff;
-  text-align: center;
-  font-size: 14px;
->>>>>>> Stashed changes
   border-radius: 20px;
   box-shadow: 3px 3px 3px 2px #f2f2f2;
 }
