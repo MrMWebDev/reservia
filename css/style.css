@@ -1,20 +1,12 @@
-body {
+* {
   font-family: Raleway, sans-serif;
   color: #000;
-  margin: left 5%;
-}
-
-.topnav {
-  overflow: hidden;
 }
 
 .topnav a {
-  float: left;
   color: #0065fc;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 14px;
 }
 
 .topnav a:hover {
@@ -37,23 +29,20 @@ form {
 
 form.search input[type="text"] {
   padding: 10px;
-  font-size: 14px;
   border: 1px solid #ddd;
-  background: #fff;
 }
 
-#icon {
+#searchicon {
   background-color: #f2f2f2;
   font-size: 20px;
-  padding: 8px;
+  padding: 10px;
   border-radius: 10px 0 0 10px;
 }
 
 form.search button {
-  padding: 10px;
+  font-family: Raleway, sans-serif;
   background: #0065fc;
   color: white;
-  font-size: 14px;
   border: 1px solid #f2f2f2;
   border-left: none;
   border-radius: 0 10px 10px 0;
@@ -70,8 +59,8 @@ form.search button:hover {
 
 .filter {
   display: flex;
-  flex: auto;
-  max-width: 75%;
+
+  max-width: 70%;
   gap: 2%;
 }
 .filteritem {
@@ -131,13 +120,11 @@ form.search button:hover {
   height: 30px;
 }
 
-
 .info i {
   font-size: 12px;
   color: #0065fc;
   cursor: pointer;
 }
-
 
 .info .fas {
   border: solid;
@@ -152,13 +139,13 @@ form.search button:hover {
 
 .container {
   display: grid;
-  height: fit-content;
   grid-gap: 20px;
   width: 65%;
   background-color: #f2f2f2;
   padding: 20px;
   border-radius: 20px;
   float: left;
+  justify-content: space-around;
 }
 
 .container h3 {
@@ -168,27 +155,43 @@ form.search button:hover {
 
 .container .item {
   background-color: #fff;
-  text-align: center;
-  font-size: 14px;
+  width: 235px;
   border-radius: 20px;
-  border: #ffffff;
-  border-width: 5px;
+  box-shadow: 3px 3px 3px 2px #dddddd;
 }
 
-.item img {
-  width: 200px;
-  height: 150px;
-  border-radius: 20px;
-  border: #fff;
-  border-width: 5px;
+.maingrid a {
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.maingrid i {
+  color: #0065fc;
+}
+
+#graystar {
+  color: #f2f2f2;
+}
+
+.maingrid p {
+  margin-left: 20px;
+}
+
+.container img {
+  width: 225px;
+  height: 125px;
+  border-radius: 20px 20px 0 0;
+  border: 5px solid #ffffff;
   cursor: pointer;
 }
 
-.item2 img {
-  width: 200px;
-  height: 150px;
-  border-radius: 20px;
-  cursor: pointer;
+.sidecontainer img {
+  width: 115px;
+  height: 125px;
+  border-radius: 20px 0 0 20px;
+  float: left;
+  border: 5px solid #ffffff;
 }
 
 .container div:hover {
@@ -197,66 +200,93 @@ form.search button:hover {
 
 .sidecontainer {
   display: grid;
-  grid-column: auto;
-  grid-gap: 20px;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 33px;
   width: 25%;
-  margin-right: 10px;
   float: right;
   background-color: #f2f2f2;
   padding: 20px;
+  padding-bottom: 47px;
   border-radius: 20px;
+  justify-content: space-around;
+}
+
+.sidecontainer h3 {
+  float: left;
+  background-color: #f2f2f2;
+}
+
+.sidecontainer .sideitem1 {
+  background-color: #f2f2f2;
+  width: 100%;
   align-items: center;
 }
 
-.sidecontainer .item {
+#sideicon {
+  float: right;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.sidecontainer .sideitem {
   background-color: #ffffff;
-  align-items: center;
-  padding: 20px;
+  width: 265px;
   font-size: 14px;
   border-radius: 20px;
   border: #ffffff;
+  padding-right: 10px;
+  box-shadow: 3px 3px 3px 2px #dddddd;
 }
 
-.item2 i {
-  float: right;
-  align-content: center;
-  height: 100%;
-}
-
-.sidecontainer div:hover {
+.sidecontainer .sideitem:hover {
   background-color: #deebff;
 }
 
 .container2 {
   display: grid;
   grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
   grid-gap: 20px;
   width: 100%;
   border-radius: 20px;
+  justify-content: space-around;
 }
 
 .container2 h3 {
-  grid-column: 1 / span 4;
-  grid-row: 1;
+  grid-area: 1 / 1 /  span 1 / span 4;
 }
 
-
-.container2 .actitem {
-  background-color: #fff;
-  text-align: center;
-  font-size: 14px;
+.container2 .actitem1 {
+  grid-area: 2 / 1 / span 2;
+  width: 225px;
   border-radius: 20px;
-  border: #ffffff;
-  border-width: 5px;
+  box-shadow: 3px 3px 3px 2px #f2f2f2;
 }
 
-.actitem img {
-  width: 200px;
+.container2 .actitem3 {
+  grid-area: 2 / 3 / span 2;
+  width: 225px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 2px #f2f2f2;
+}
+
+.container2 .actitem2, .actitem4, .actitem5, .actitem6 {
+  width: 225px;
+  border-radius: 20px;
+  padding-bottom: 5px;
+  box-shadow: 3px 3px 3px 2px #f2f2f2;
+}
+
+.container2 img {
+  width: 225px;
   height: 150px;
-  border-radius: 20px;
-  border: #fff;
-  border-width: 5px;
+  border-radius: 20px 20px 0 0;
   cursor: pointer;
+}
+
+.container2 .actitem1 img, .actitem3 img {
+  height: 320px;
 }
 
 footer {
@@ -264,8 +294,11 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
   background-color: #f2f2f2;
+}
+
+footer a {
+  text-decoration: none;
 }
 
 .footer1 {
@@ -283,7 +316,7 @@ footer {
 }
 
 @media screen and (max-width: 720px) {
-    .container {
-      grid: column;
+  .container {
+    grid: column;
   }
 }
