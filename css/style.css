@@ -1,18 +1,28 @@
 * {
+  box-sizing: border-box;
+}
+
+body {
   font-family: Raleway, sans-serif;
   color: #000;
+  margin-left: 20px;
 }
 
 .topnav a {
-  color: #0065fc;
+  color: #000;
   padding: 14px 16px;
   text-decoration: none;
 }
 
+.topnav .signup {
+  color: #0065fc;
+  font-weight: bolder;
+}
+
 .topnav a:hover {
+  color: #0065fc;
   text-decoration: overline;
-  font-weight: bold;
-  height: 80%;
+  height: 60%;
 }
 
 .topnav a:active {
@@ -61,7 +71,7 @@ form.search button:hover {
   display: flex;
 
   max-width: 70%;
-  gap: 2%;
+  gap: 10px;
 }
 .filteritem {
   display: flex;
@@ -88,7 +98,7 @@ form.search button:hover {
 
 .filter div {
   border: solid;
-  height: 40px;
+  height: 41px;
   border-width: 3px;
   border-radius: 30px;
   border-color: #f2f2f2;
@@ -137,27 +147,11 @@ form.search button:hover {
   display: inline-flex;
 }
 
-.container {
-  display: grid;
-  grid-gap: 20px;
-  width: 65%;
-  background-color: #f2f2f2;
-  padding: 20px;
-  border-radius: 20px;
-  float: left;
-  justify-content: space-around;
-}
+.maingrid {
+  display: flex;
+  flex-wrap: wrap;
 
-.container h3 {
-  grid-column: 1 / span 3;
-  grid-row: 1;
-}
-
-.container .item {
-  background-color: #fff;
-  width: 235px;
-  border-radius: 20px;
-  box-shadow: 3px 3px 3px 2px #dddddd;
+  gap: 40px;
 }
 
 .maingrid a {
@@ -170,12 +164,38 @@ form.search button:hover {
   color: #0065fc;
 }
 
-#graystar {
-  color: #f2f2f2;
-}
-
 .maingrid p {
   margin-left: 20px;
+}
+.container {
+  display: grid;
+  gap: 20px;
+  width: 63%;
+  background-color: #f2f2f2;
+  padding: 30px;
+  border-radius: 20px;
+  float: left;
+  justify-content: space-around;
+}
+
+.container h3 {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+
+.container .item {
+  background-color: #fff;
+  
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 2px #dddddd;
+}
+
+.containericon {
+  margin-left: 20px;
+}
+
+#graystar {
+  color: #f2f2f2;
 }
 
 .container img {
@@ -194,6 +214,13 @@ form.search button:hover {
   border: 5px solid #ffffff;
 }
 
+.container2 img {
+  width: 225px;
+  height: 150px;
+  border-radius: 20px 20px 0 0;
+  cursor: pointer;
+}
+
 .container div:hover {
   background-color: #deebff;
 }
@@ -203,11 +230,11 @@ form.search button:hover {
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto;
   grid-gap: 33px;
-  width: 25%;
+  width: 32%;
   float: right;
   background-color: #f2f2f2;
   padding: 20px;
-  padding-bottom: 47px;
+  padding-bottom: 50px;
   border-radius: 20px;
   justify-content: space-around;
 }
@@ -224,6 +251,7 @@ form.search button:hover {
 }
 
 #sideicon {
+  color: #000;
   float: right;
   margin-top: 20px;
   font-size: 20px;
@@ -231,7 +259,7 @@ form.search button:hover {
 
 .sidecontainer .sideitem {
   background-color: #ffffff;
-  width: 265px;
+  
   font-size: 14px;
   border-radius: 20px;
   border: #ffffff;
@@ -278,12 +306,7 @@ form.search button:hover {
   box-shadow: 3px 3px 3px 2px #f2f2f2;
 }
 
-.container2 img {
-  width: 225px;
-  height: 150px;
-  border-radius: 20px 20px 0 0;
-  cursor: pointer;
-}
+
 
 .container2 .actitem1 img, .actitem3 img {
   height: 320px;
@@ -291,7 +314,6 @@ form.search button:hover {
 
 footer {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   background-color: #f2f2f2;
@@ -315,8 +337,41 @@ footer a {
   flex-direction: column;
 }
 
-@media screen and (max-width: 720px) {
-  .container {
-    grid: column;
+@media screen and (max-width: 426px) {
+
+  body {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 10px;
+    align-items: center;
   }
+
+  .maingrid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 5px;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    justify-content: center;
+  }
+  .sidecontainer {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    justify-content: center;
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    justify-content: center;
+  }
+
 }
