@@ -69,7 +69,6 @@ form.search button:hover {
 
 .filter {
   display: flex;
-
   max-width: 70%;
   gap: 10px;
 }
@@ -150,7 +149,6 @@ form.search button:hover {
 .maingrid {
   display: flex;
   flex-wrap: wrap;
-
   gap: 40px;
 }
 
@@ -183,13 +181,6 @@ form.search button:hover {
   grid-row: 1;
 }
 
-.container .item {
-  background-color: #fff;
-  
-  border-radius: 20px;
-  box-shadow: 3px 3px 3px 2px #dddddd;
-}
-
 .containericon {
   margin-left: 20px;
 }
@@ -198,31 +189,23 @@ form.search button:hover {
   color: #f2f2f2;
 }
 
-.container img {
-  width: 225px;
-  height: 125px;
-  border-radius: 20px 20px 0 0;
-  border: 5px solid #ffffff;
-  cursor: pointer;
-}
-
-.sidecontainer img {
-  width: 115px;
-  height: 125px;
-  border-radius: 20px 0 0 20px;
-  float: left;
-  border: 5px solid #ffffff;
-}
-
-.container2 img {
-  width: 225px;
-  height: 150px;
-  border-radius: 20px 20px 0 0;
-  cursor: pointer;
-}
-
 .container div:hover {
   background-color: #deebff;
+}
+
+.container .item {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 2px #dddddd;
+} 
+
+.container img {
+  width: 100%;
+  height: 125px;
+  border-radius: 20px 20px 0 0;
+  border: 5px solid #ffffff;
+  cursor: pointer;
+  object-fit: cover;
 }
 
 .sidecontainer {
@@ -244,12 +227,6 @@ form.search button:hover {
   background-color: #f2f2f2;
 }
 
-.sidecontainer .sideitem1 {
-  background-color: #f2f2f2;
-  width: 100%;
-  align-items: center;
-}
-
 #sideicon {
   color: #000;
   float: right;
@@ -257,18 +234,31 @@ form.search button:hover {
   font-size: 20px;
 }
 
+.sidecontainer .sideitem:hover {
+  background-color: #deebff;
+}
+
+.sidecontainer .sideitem1 {
+  background-color: #f2f2f2;
+  width: 100%;
+  align-items: center;
+}
+
 .sidecontainer .sideitem {
   background-color: #ffffff;
-  
-  font-size: 14px;
   border-radius: 20px;
   border: #ffffff;
   padding-right: 10px;
   box-shadow: 3px 3px 3px 2px #dddddd;
 }
 
-.sidecontainer .sideitem:hover {
-  background-color: #deebff;
+.sidecontainer img {
+  width: 30%;
+  height: 135px;
+  border-radius: 20px 0 0 20px;
+  float: left;
+  border: 5px solid #ffffff;
+  object-fit: cover;
 }
 
 .container2 {
@@ -302,14 +292,20 @@ form.search button:hover {
 .container2 .actitem2, .actitem4, .actitem5, .actitem6 {
   width: 225px;
   border-radius: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
   box-shadow: 3px 3px 3px 2px #f2f2f2;
 }
 
-
-
 .container2 .actitem1 img, .actitem3 img {
   height: 320px;
+}
+
+.container2 img {
+  width: 225px;
+  height: 150px;
+  border-radius: 20px 20px 0 0;
+  cursor: pointer;
+  object-fit: cover;
 }
 
 footer {
@@ -340,10 +336,17 @@ footer a {
 @media screen and (max-width: 426px) {
 
   body {
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     margin: 10px;
     align-items: center;
+  }
+
+  .filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .maingrid {
@@ -357,21 +360,44 @@ footer a {
   .container {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 100%;
     justify-content: center;
+    background: none;
   }
+
+  .container .item {
+    box-shadow: 5px 3px #f2f2f2;
+  }
+
   .sidecontainer {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 100%;
     justify-content: center;
+  }
+
+  .sidecontainer .img {
+    width: 100%;
   }
 
   .container2 {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 100%;
     justify-content: center;
+  }
+
+  .container2 .actitem1, .actitem2, .actitem3, .actitem4, .actitem5, .actitem6 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 220px;
+    justify-content: center;
+  }
+
+  .container2 .img {
+    width: 100%;
+    object-fit: cover;
   }
 
 }
