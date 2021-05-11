@@ -290,20 +290,20 @@ form.search button:hover {
 
 .container2 .actitem1 {
   grid-area: 2 / 1 / span 2;
-  width: 300px;
+  width: 100%;
   border-radius: 20px;
   box-shadow: 3px 3px 8px 5px #f2f2f2;
 }
 
 .container2 .actitem3 {
   grid-area: 2 / 3 / span 2;
-  width: 300px;
+  width: 100%;
   border-radius: 20px;
   box-shadow: 3px 3px 8px 5px #f2f2f2;
 }
 
 .container2 .actitem2, .actitem4, .actitem5,.actitem6 {
-  width: 300px;
+  width: 100%;
   border-radius: 20px;
   padding-bottom: 20px;
   box-shadow: 3px 3px 8px 5px #f2f2f2;
@@ -330,7 +330,7 @@ form.search button:hover {
 }
 
 .container2 img {
-  width: 300px;
+  width: 100%;
   height: 200px;
   border-radius: 20px 20px 0 0;
   cursor: pointer;
@@ -379,7 +379,7 @@ footer a {
   }
 
   .info {
-    width: 100%;
+    width: 95%;
   }
 
   .maingrid {
@@ -410,10 +410,6 @@ footer a {
     justify-content: center;
   }
 
-  .sidecontainer .img {
-    width: 100%;
-  }
-
   .container2 {
     display: flex;
     flex-direction: column;
@@ -427,14 +423,39 @@ footer a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 220px;
-    justify-content: center;
   }
 
-  .container2 img {
+  .container2 .actitem1 img {
     width: 100%;
-    height: 200px;
+    height: 220px;
+    justify-content: center;
     object-fit: cover;
+  }
+
+  .container2 .actitem3 img {
+    width: 100%;
+    height: 220px;
+    justify-content: center;
+    object-fit: cover;
+  }
+
+  .container2 .actitem4 img {
+    width: 100%;
+    height: 220px;
+    justify-content: center;
+    object-fit: cover;
+  }
+
+  .container2 .actitem5 img {
+    width: 100%;
+    height: 220px;
+    justify-content: center;
+    object-fit: cover;
+  }
+
+  .container2 .resize img {
+    width: 100%;
+    height: 220px;
     justify-content: center;
     object-fit: cover;
   }
