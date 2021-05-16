@@ -116,7 +116,6 @@ form.search button:hover {
 .info {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 5px;
   align-items: center;
   width: 40%;
   height: 100%;
@@ -125,7 +124,7 @@ form.search button:hover {
 .infoitem {
   display: flex;
   align-items: center;
-  gap: 2%;
+  gap: 5px;
   height: 30px;
 }
 
@@ -247,6 +246,7 @@ form.search button:hover {
 
 .sidecontainer .sideitem:hover {
   background-color: #deebff;
+  border: 5px solid #deebff;
 }
 
 .sidecontainer .sideitem1 {
@@ -386,7 +386,11 @@ footer a {
   }
 
   .info {
-    width: 95%;
+    width: 90%;
+  }
+
+  .info .fas {
+    width: 37px;
   }
 
   .maingrid {
