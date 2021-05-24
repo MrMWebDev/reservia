@@ -278,9 +278,16 @@ form.search button:hover {
 .container2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px 200px 30px 200px;
   gap: 30px;
   width: 98%;
   border-radius: 20px;
+  text-align: justify;
+  grid-template-areas:
+  "a a a a"
+  "b c d e"
+  "b c d g"
+  "b f d g";
 }
 
 .container2 p {
@@ -289,35 +296,47 @@ form.search button:hover {
 }
 
 .container2 h3 {
-  grid-area: 1 / 1 / span 1 / span 4;
+  grid-area: a;
 }
 
 .container2 .actitem1 {
-  grid-area: 2 / 1 / span 2;
+  grid-area: b;
   width: 100%;
-  height: 465px;
   border-radius: 20px;
   box-shadow: 3px 3px 8px 5px #f2f2f2;
 }
 
 .container2 .actitem3 {
-  grid-area: 2 / 3 / span 2;
+  grid-area: d;
   width: 100%;
-  height: 465px;
   border-radius: 20px;
   box-shadow: 3px 3px 8px 5px #f2f2f2;
 }
 
-.container2 .actitem2,.actitem6 {
+.container2 .actitem2 {
+  grid-area: c;
   width: 100%;
-  height: 240px;
   border-radius: 20px;
   box-shadow: 3px 3px 8px 5px #f2f2f2;
+}
+
+.container2 .actitem6 {
+  grid-area: g;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 3px 3px 8px 5px #f2f2f2;
+}
+
+.container2 .actitem4 {
+  grid-area: e;
+}
+
+.container2 .actitem5 {
+  grid-area: f;
 }
 
 .container2 .actitem4, .actitem5 {
   width: 100%;
-  height: 190px;
   border-radius: 20px;
   box-shadow: 3px 3px 8px 5px #f2f2f2;
 }
@@ -333,18 +352,18 @@ form.search button:hover {
 }
 
 .container2 .actitem4 img {
-  height: 150px;
+  height: 130px;
   object-fit: cover;
 }
 
 .container2 .actitem5 img {
-  height: 150px;
+  height: 130px;
   object-fit: cover;
 }
 
 .container2 img {
   width: 100%;
-  height: 200px;
+  height: 190px;
   border-radius: 20px 20px 0 0;
   cursor: pointer;
   object-fit: cover;
