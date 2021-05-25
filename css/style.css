@@ -220,13 +220,13 @@ form.search button:hover {
 
 .sidecontainer {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
-  grid-gap: 45px;
+  gap: 45px;
   width: 32%;
   float: right;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 40px;
   padding-bottom: 50px;
   border-radius: 20px;
   justify-content: space-around;
