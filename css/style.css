@@ -152,12 +152,13 @@ form.search button:hover {
 .maingrid {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 98%;
   gap: 40px;
   margin: 20px 0 0 20px;
 }
 
 .maingrid a {
+  color: #000;
   font-weight: bold;
   text-decoration: none;
   margin-left: 20px;
