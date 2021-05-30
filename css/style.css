@@ -22,9 +22,11 @@ header {
 .topnav .signup {
   color: #0065fc;
   font-weight: bolder;
+  float: right;
+  padding-top: 20px; 
 }
 
-.topnav a:hover {
+.topnav-right a:hover {
   color: #0065fc;
   border-top: solid #0065fc 2px;
   padding-top: 38px;
@@ -426,8 +428,26 @@ footer a {
     width: 90%;
   }
 
-  .topnav a:hover {
-    text-decoration: underline;
+  .topnav {
+    margin-bottom: 70px;
+  }
+  .signup { 
+    height: 90%;
+    border-bottom: none;
+  }
+
+  .topnav .signup {
+    color: #0065fc;
+    font-weight: bolder;
+    float: right;
+    padding-top: 20px; 
+  }
+
+  .topnav-right a:hover {
+    color: #0065fc;
+    border-bottom: solid #0065fc 2px;
+    border-top: none;
+    padding-bottom: 20px;
   }
 
   .filter {
